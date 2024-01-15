@@ -1,0 +1,88 @@
+.maskControl {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 486px;
+  max-width: 100%;
+  border: rgba(0, 0, 0, 0.125);
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(95, 116, 141, 0.03) 0px 2px 1px -1px,
+    rgba(95, 116, 141, 0.04) 0px 1px 1px 0px,
+    rgba(95, 116, 141, 0.08) 0px 1px 3px 0px;
+}
+.controlBottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 20px 15px 20px;
+}
+.controlLabel {
+  color: var(--bgTwo);
+  font-size: 14px;
+  font-weight: var(--regular);
+}
+.controlSlider[type='range'] {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 2px;
+  width: 100%;
+  height: 10px;
+  background-color: var(--form2);
+  cursor: ew-resize;
+}
+.controlSlider[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--textDisabled);
+  border-radius: 4px;
+}
+.controlValue {
+  margin-left: 20px;
+  padding: 5px 5px;
+  width: 50px;
+  text-align: center;
+  border-radius: 4px;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  border: none;
+  color: var(--bgOne);
+  background-color: #1976d2;
+}
+.controlB {
+  margin-left: 10px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.controlR {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  border-left: 2px solid #1976d2;
+  cursor: pointer;
+}
+.controlClose:hover {
+  background-color: var(--bgFour);
+}
+.controlClose:active {
+  background-color: var(--bgFive);
+}
+.controlClose:focus-visible {
+  border: 1px solid var(--bgOne);
+}
+.controlClose:disabled {
+  background-color: var(--bgDisabled);
+  color: var(--textDisabled);
+}
